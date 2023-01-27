@@ -1,0 +1,13 @@
+/* external css (외부 css) : css파일에 스타일 코드 작성 */
+/* css 주석 */
+
+
+h1 {
+    color:blueviolet; background-color: black;
+}
+p {
+    color :gold; background-color:darkgrey;
+}
+h2 {
+    color: bisque; background-color: brown;
+}
