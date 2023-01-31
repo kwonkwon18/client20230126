@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div{
+            border: 5px solid red;
+            margin-top : 20px;
+            color: brown;
+            background-color: aqua;
+            text-align: center;
+            /* 위아래 기준 텍스트 중앙 */
+        }
+        /* div 하위에 있는 것 중에서 규칙을 준 것만 표시  */
+        /* body(부모) 의 div 중 4번째 */
+        /* 같은 element 에만 적용이 된다. 여기의 경우 p, h는 안됨 */
+        div:nth-child(4){
+            color:blue;
+            font-size: 100px;
+        }
+        #box1{
+            padding-top: 7px;
+        }
+        #box2{
+            padding-right : 100px;
+        }
+        #box3{
+            padding-bottom : 20px;
+        }
+        #box4{
+            padding-left : 20px;
+        }
+        #box5{
+            padding-top : 20px;
+        }
+        #box6{
+            padding-right : 10px;
+        }
+        #box7{
+            padding : 20px 10px 50px 6px;
+        }
+        
+        #box10{
+            margin : 0px auto 1000px;
+            padding-top: 50px;
+            font-size : 16px;
+            width: 100px;
+            padding-bottom: 50px;
+        }
+    </style>
+<body>
+    <div id="box1">box1</div>
+    <div id="box2">box2</div>
+    <div id="box3">box3</div>
+    <div id="box4">box4</div>
+    <div id="box5">box5</div>
+    <div id="box6">box6</div>
+    <div id="box7">box7</div>
+    <div id="box8">box8</div>
+    <div id="box9">box9</div>
+    <div id="box10">box10</div>
+</body>
+</html>
