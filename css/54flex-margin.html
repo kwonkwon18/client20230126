@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .item{
+            background-color: skyblue;
+        }
+        .item:nth-child(even){
+            background-color: yellowgreen;
+        }
+        .container{
+            display: flex;
+            background-color: grey;
+        }
+
+        .item{
+            margin-right: 10px;
+        }
+
+        .item:nth-child(2){
+            /* 다른 요소를 밀어냄 */
+            margin-right: auto;
+        }
+    </style>
+<body>
+    <!-- .container>.item*3>lorem1 -->
+    <div class="container">
+        <div class="item">
+            Lorem.
+        </div>
+        <div class="item">
+            Necessitatibus?
+        </div>
+        <div class="item">
+            Perferendis.
+        </div>
+    </div>
+</body>
+</html>

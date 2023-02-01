@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container{
+            display: flex;
+            background-color: bisque;
+        }
+        .head{
+            margin-left : 50px;
+        }
+        .container2{
+            display: flex;
+            background-color: black;
+            color: aliceblue;
+        }
+        .item{
+            padding: 7px 5px;
+            font-size: 24px;
+            align-items: center;
+            text-align: center;
+        }
+        .item-auto{
+            margin-right : auto;
+        }
+
+        .mr-auto{
+            margin-right : auto;
+        }
+        .table_head_row,
+        .table_header_cell{
+            display: flex;
+        }
+
+        .table_data_row,
+        .table_data_row{
+            display: flex;
+            border-bottom: 3px solid grey;
+        }
+        .table_header_cell{
+            text-align: center;
+            font-weight: bold;
+            background-color: grey;
+        }
+        .table_header_cell,
+        .table_data_cell{
+            width: 400px;
+        }
+
+        .table_header_cell:nth-child(2),
+        .table_data_cell:nth-child(2){
+            flex: 1;
+        }
+        .table_head_row > div,
+        .table_data_row > div{
+            border-right: 1px solid black;
+        }
+    </style>
+<body>
+<div class="container">
+    <div class="head">
+        <i class="fa-solid fa-star"></i>
+    </div>
+    <div class="head">
+        Lorem.
+    </div>
+    <div class="head item-auto">
+        Laborum!
+    </div>
+    <div class="head" style="border: 3px solid red;">
+        Quos.
+    </div>
+</div>
+    
+            <div class="container2">
+                <div class="item">
+                    Lorem.
+                </div>
+                <div class="item">
+                    Doloremque?
+                </div>
+                <div class="item">
+                    A!
+                </div>
+                <div class="item">
+                    Asperiores.
+                </div>
+                <div class="item">
+                    Labore.
+                </div>
+                <div class="item">
+                    Voluptate?
+                </div>
+                <!-- " " 안에 단어들의 띄어쓰기를 통해서 중복하여  
+                클래스 지정 가능  -->
+                <div class="item mr-auto">
+                    Fugit.
+                </div>
+                <div class="item">
+                    Libero!
+                </div>
+                <div class="item">
+                    Quidem?
+                </div>
+                <div class="item">
+                    In.
+                </div>
+            </div>
+            <!-- .container3>.table_head_row>.table_header_cell*3>lorem1^^.table_data_row*10>.table_data_cell*3>lorem2 -->
+<div class="container3">
+    <div class="table_head_row">
+        <div class="table_header_cell">
+            Lorem.
+        </div>
+        <div class="table_header_cell">
+            Dolores.
+        </div>
+        <div class="table_header_cell">
+            Iure.
+        </div>
+    </div>
+    <div class="table_data_row">
+        <div class="table_data_cell">
+            Lorem, ipsum.
+        </div>
+        <div class="table_data_cell">
+            Aperiam, consequuntur.
+        </div>
+        <div class="table_data_cell">
+            Fuga, libero.
+        </div>
+    </div>
+    <div class="table_data_row">
+        <div class="table_data_cell">
+            Lorem, ipsum.
+        </div>
+        <div class="table_data_cell">
+            Assumenda, at.
+        </div>
+        <div class="table_data_cell">
+            Ut, fugiat.
+        </div>
+    </div>
+    <div class="table_data_row">
+        <div class="table_data_cell">
+            Lorem, ipsum.
+        </div>
+        <div class="table_data_cell">
+            Dolorum, totam!
+        </div>
+        <div class="table_data_cell">
+            Pariatur, eos.
+        </div>
+    </div>
+    <div class="table_data_row">
+        <div class="table_data_cell">
+            Lorem, ipsum.
+        </div>
+        <div class="table_data_cell">
+            Voluptate, tenetur?
+        </div>
+        <div class="table_data_cell">
+            Vitae, et?
+        </div>
+    </div>
+    <div class="table_data_row">
+        <div class="table_data_cell">
+            Lorem, ipsum.
+        </div>
+        <div class="table_data_cell">
+            Ipsum, cumque.
+        </div>
+        <div class="table_data_cell">
+            Minus, reiciendis.
+        </div>
+    </div>
+    <div class="table_data_row">
+        <div class="table_data_cell">
+            Lorem, ipsum.
+        </div>
+        <div class="table_data_cell">
+            Cum, id?
+        </div>
+        <div class="table_data_cell">
+            Voluptatibus, nobis.
+        </div>
+    </div>
+    <div class="table_data_row">
+        <div class="table_data_cell">
+            Lorem, ipsum.
+        </div>
+        <div class="table_data_cell">
+            Inventore, amet.
+        </div>
+        <div class="table_data_cell">
+            Aliquam, labore!
+        </div>
+    </div>
+    <div class="table_data_row">
+        <div class="table_data_cell">
+            Lorem, ipsum.
+        </div>
+        <div class="table_data_cell">
+            Tempora, dicta?
+        </div>
+        <div class="table_data_cell">
+            Itaque, veritatis.
+        </div>
+    </div>
+    <div class="table_data_row">
+        <div class="table_data_cell">
+            Lorem, ipsum.
+        </div>
+        <div class="table_data_cell">
+            Iusto, sit?
+        </div>
+        <div class="table_data_cell">
+            Minima, natus.
+        </div>
+    </div>
+    <div class="table_data_row">
+        <div class="table_data_cell">
+            Lorem, ipsum.
+        </div>
+        <div class="table_data_cell">
+            Soluta, consectetur.
+        </div>
+        <div class="table_data_cell">
+            Vitae, facilis!
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

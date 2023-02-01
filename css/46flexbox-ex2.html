@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .item{
+            color: cadetblue;
+            background-color: burlywood;
+            font-size: 24px;
+            padding: 25px;
+        }
+        /*  container 클래스를 display : flex로 한다.  */
+        /* 인라인 형식으로 보여주지만 패딩 마진 등을 수정할 수 있음. */
+        .container{
+            display: flex;
+        }
+    </style>
+<body>
+    <!-- 두개의 컨테이너를 만들고 그 둘을 아우르는 컨테이너를 만듦 
+    그리고 justiy-content : space-between 을 적용하여 두 컨테이너의 위치를 조정함 -->
+<div class = "container" style="justify-content: space-between;">
+    <!-- 감싸고 있는 element 를 플렉스 컨테이너 -->
+    <!-- 플렉스 컨테이너의 자식요소들을 플렉스 아이템이라고 함  -->
+    <!-- 콘테이너 클래스(보통이렇게 씀) 로 지정하여 div 로 묶는다.  -->
+    <div class="container">
+        <div class = "item">
+            <!-- 얘는 자식이 아니라 자손임 -> 플렉스 아이템 아님 -->
+            <i class="fa-solid fa-house"></i>
+        </div>
+        <div class="item">
+            HTMl
+        </div>
+        <div class="item">
+            css
+        </div>
+        <div class="item">
+            javascript
+        </div>
+        <div class="item">
+            sql
+        </div>
+        <div class="item">
+            python
+        </div>
+        <div class="item">
+            php
+        </div>
+        <div class="item">
+            c
+        </div>
+        <div class="item">
+            c++
+        </div>
+        <div class="item">
+            c#
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="item">
+            <i class="fa-solid fa-download"></i>
+        </div>
+        <div class="item">
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div class="item">
+            <i class="fa-solid fa-bomb"></i>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!-- 게시판 레이아웃 만들어보기 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <style>
+        .table-header-row,
+        .table-data-row{
+            display: flex;
+            border-bottom: 3px solid grey;
+        }
+
+        .table-header-row{
+            border: 3px solid black;
+        }
+
+        .table-header-cell{
+            text-align: center;
+            font-weight: bold;
+        }
+        .table-data-row:nth-child(odd){
+            background-color: gray;
+        }
+        .table-header-cell,
+        .table-data-cell{
+            width: 100px;
+            padding: 7px 5px;
+        }
+
+        .table-header-cell:nth-child(2),
+        .table-data-cell:nth-child(2){
+            /* 두번째열은 꽉 채우기로 했다. (중요 내용이므로) */
+            flex: 1;
+            text-align: center;
+        }
+    </style>
+
+<body>
+    <div class="table">
+        <div class="table-header-row">
+            <div class="table-header-cell">
+                Lorem.
+            </div>
+            <div class="table-header-cell">
+                Expedita?
+            </div>
+            <div class="table-header-cell">
+                Quis.
+            </div>
+            <div class="table-header-cell">
+                Itaque.
+            </div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">
+                Lorem.
+            </div>
+            <div class="table-data-cell">
+                Dolorem!
+            </div>
+            <div class="table-data-cell">
+                Ipsam.
+            </div>
+            <div class="table-data-cell">
+                Facere.
+            </div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">
+                Lorem.
+            </div>
+            <div class="table-data-cell">
+                Ipsam?
+            </div>
+            <div class="table-data-cell">
+                Quam.
+            </div>
+            <div class="table-data-cell">
+                Neque!
+            </div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">
+                Lorem.
+            </div>
+            <div class="table-data-cell">
+                Consequuntur.
+            </div>
+            <div class="table-data-cell">
+                Iure!
+            </div>
+            <div class="table-data-cell">
+                Id?
+            </div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">
+                Lorem.
+            </div>
+            <div class="table-data-cell">
+                Nesciunt.
+            </div>
+            <div class="table-data-cell">
+                Rerum!
+            </div>
+            <div class="table-data-cell">
+                Repellendus?
+            </div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">
+                Lorem.
+            </div>
+            <div class="table-data-cell">
+                Dolor?
+            </div>
+            <div class="table-data-cell">
+                Incidunt.
+            </div>
+            <div class="table-data-cell">
+                Quae?
+            </div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">
+                Lorem.
+            </div>
+            <div class="table-data-cell">
+                Quasi.
+            </div>
+            <div class="table-data-cell">
+                Eveniet?
+            </div>
+            <div class="table-data-cell">
+                Placeat.
+            </div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">
+                Lorem.
+            </div>
+            <div class="table-data-cell">
+                Vel.
+            </div>
+            <div class="table-data-cell">
+                Dolorem!
+            </div>
+            <div class="table-data-cell">
+                Dicta!
+            </div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">
+                Lorem.
+            </div>
+            <div class="table-data-cell">
+                Adipisci.
+            </div>
+            <div class="table-data-cell">
+                Sunt?
+            </div>
+            <div class="table-data-cell">
+                A!
+            </div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">
+                Lorem.
+            </div>
+            <div class="table-data-cell">
+                Autem!
+            </div>
+            <div class="table-data-cell">
+                Deleniti.
+            </div>
+            <div class="table-data-cell">
+                Vel?
+            </div>
+        </div>
+        <div class="table-data-row">
+            <div class="table-data-cell">
+                Lorem.
+            </div>
+            <div class="table-data-cell">
+                Ad.
+            </div>
+            <div class="table-data-cell">
+                A.
+            </div>
+            <div class="table-data-cell">
+                Eum!
+            </div>
+        </div>
+    </div>
+</body>
+</html>
