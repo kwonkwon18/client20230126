@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h1{
+            background-color: rgb(127, 192, 194);
+        }
+        h1:nth-child(odd){
+            background-color: rgb(90, 91, 155);
+        }
+        #head1{
+            /* 기본값 */
+            /* left 같은걸 지정해도 안움직임 */
+            /* '포지션된 요소가 아니다' 라고 표현함 */
+            position:static;
+            left: 100px;
+        }
+        #head2{
+            /* 원래 위치 기준으로 포지션 가능 */
+            /* left라고 하면 왼쪽으로 보내는 것이 아니라
+            왼쪽에 여백을 줘서 오른쪽으로 보내는 것이라고 생각 */
+            position : relative;
+            left: 100px;
+        }
+        #head3{
+            /* 원래 위치기준에서 위로 30px */
+            position: relative;
+            bottom: 30px;
+        }
+        #head4{
+            /* 원래 위치기준에서 왼쪽으로 10px 이동 */
+            position: relative;
+            right: 10px;
+        }
+        #head5{
+            /* 원래 위치 기준에서 아래로 20px 이동 */
+            position : relative;
+            top: 20px;
+        }
+        #head6{
+            position: relative;
+            bottom: 20px;
+            left: 20px;
+        }
+        #head7:hover{
+            /* 강조하는 느낌을 줄 수 있음 */
+            position: relative;
+            bottom: 20px;
+            left: 20px;
+        }
+    </style>
+<body>
+    <!-- h1#head$*10>lorem3 -->
+    <h1 id="head1">
+        Lorem, ipsum dolor.
+    </h1>
+    <h1 id="head2">
+        Animi, nisi recusandae.
+    </h1>
+    <h1 id="head3">
+        Recusandae, et delectus?
+    </h1>
+    <h1 id="head4">
+        Sit, consectetur! Fugit!
+    </h1>
+    <h1 id="head5">
+        Impedit, iure voluptate!
+    </h1>
+    <h1 id="head6">
+        Numquam, provident animi.
+    </h1>
+    <h1 id="head7">
+        Asperiores, aperiam animi!
+    </h1>
+    <h1 id="head8">
+        Obcaecati, cupiditate debitis?
+    </h1>
+    <h1 id="head9">
+        Autem, fuga deleniti!
+    </h1>
+    <h1 id="head10">
+        Repellat, ipsum tenetur.
+    </h1>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .outer{
+            /* position: relative; */
+            width: 500px;
+            height: 500px;
+            border: 3px solid black;
+        }
+        .inner{
+            width: 200px;
+            height: 200px;
+            border: 3px solid plum;
+            /* 포지션된 요소 : position 이 static 이 아닌 요소 */
+            /* 가장 가까운 조상중 표지션된 요소 기준 */
+            /* 없으면 루트 요소(html) 가장 위에 있는 요소  */
+            position: absolute;
+            bottom: 0px;
+        }
+    </style>
+<body>
+    <!-- .outer>lorem3+.inner>lorem3-->
+    <div class="outer">
+        Lorem, ipsum dolor.
+        <div class="inner">
+            Lorem, ipsum dolor.
+        </div>
+    </div>
+
+</body>
+</html>
