@@ -12,22 +12,29 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //boolean
-    
-    let a = 3;
-    a = 4;
-    a = 5;
+    let a = 0; // 변수를 초기화 하는 코드 
 
-    let b = "hello";
-    b = "hi";
+    while (a<5) { // 조건
+        console.log("a", a);
+        a++; // 조건에 들어갈 변수 변경코드 
+    }
 
+    // for : 반복문
+    // (초기화코드; 조건; 변경코드)
+    for (let b = 0; b < 5; b++){
+        console.log("b", b);
+    }
 
-    // 2개의 값만 있음 (true, false) 중요
-    let c = true;
-    let d = false;
+    // 변수 c를 사용해서 5 ~ 1 까지 되도록 for 코드 작성
+    for (let c = 5; c > 0 ; c--){
+        console.log("c", c);
+    }
 
-    
-
+    let d = 5;
+    while (d > 0 ){
+        console.log(d);
+        d--;
+    }
     </script>
 </body>
 </html>

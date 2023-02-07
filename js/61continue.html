@@ -12,21 +12,23 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //boolean
-    
-    let a = 3;
-    a = 4;
-    a = 5;
 
-    let b = "hello";
-    b = "hi";
+    // continue : 한번의 반복 (iteration)을 건너뜀
+    // 소속된 반복문의 조건식 파트로 돌아간다. 
+
+    console.log("이전 코드들...");
+
+    for (let i = 0; i < 5 ; i ++){
+        console.log(i);
 
 
-    // 2개의 값만 있음 (true, false) 중요
-    let c = true;
-    let d = false;
+        break;
 
-    
+        console.log("코드블럭 내 다음 코드들"); // 이건 건너뛰어버림
+    }
+
+    console.log("다음 코드들...");
+
 
     </script>
 </body>

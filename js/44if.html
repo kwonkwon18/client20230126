@@ -1,3 +1,4 @@
+// 43 번 문제를 if 로 구현
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,22 +13,26 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //boolean
     
-    let a = 3;
-    a = 4;
-    a = 5;
+        let grade = prompt("학점을 입력해주세요", "A");
 
-    let b = "hello";
-    b = "hi";
+        let message = "";
+
+        if(grade === "A" || grade === "a"){
+            message = "A학점입니다"
+        }else if(grade === "B" || grade === "b"){
+            message = "B학점입니다"
+        }else if(grade === "C" || grade === "c"){
+            message = "C학점입니다"
+        } else{
+            message = "다시 입력해주세요"
+        }
+
+        console.log(message);
 
 
-    // 2개의 값만 있음 (true, false) 중요
-    let c = true;
-    let d = false;
-
-    
-
+// || 하니까 왜 이상하게 되지? 아.. grade === "a" || "A" 이렇게 하는게 아니라
+// grade === "a" || grade ==="A" 이렇게 
     </script>
 </body>
 </html>

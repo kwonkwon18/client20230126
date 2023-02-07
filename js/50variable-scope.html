@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,26 +9,28 @@
     <style>
     </style>
 </head>
+
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //boolean
-    
-    let a = 3;
-    a = 4;
-    a = 5;
+        // 변수의 scope
 
-    let b = "hello";
-    b = "hi";
+        //let, const(상수)의 scope은 선언된 코드블럭 내 
+        // ----> 즉, 코드블럭 내에서만 사용 가능
 
+        let a = 5;
 
-    // 2개의 값만 있음 (true, false) 중요
-    let c = true;
-    let d = false;
+        if (true) {
+            let b = 10; //이 코드블럭 안에서만 사용이 가능하다
 
-    
+            console.log("a", a); // a 는 코드블럭 안에 있진 않지만, 출력이 됨 선언된 안쪽에서 다 사용이 가능함
+            console.log("b", b);
 
+        }
+        onsole.log("a", a); // ok
+        console.log("b", b); // 출력되지 않음 ! b가 정의되지 않았다고 오류가 나옴
     </script>
 </body>
+
 </html>

@@ -12,21 +12,28 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //boolean
     
-    let a = 3;
-    a = 4;
-    a = 5;
+let a = 0 ;
 
-    let b = "hello";
-    b = "hi";
+while (a < 5){
+    console.log("a", a);
+    a++;
+}
 
+console.log("a", a); //5
 
-    // 2개의 값만 있음 (true, false) 중요
-    let c = true;
-    let d = false;
+for (let b = 0; b < 5; b++){
+    console.log("b", b);
+}
 
-    
+console.log("b", b); // 출력이 안됨, for 에서 선언된 b 변수는 for 블록
+// 안에서만 쓸 수 있다. 
+
+let c;
+for (c = 0; c < 5 ; c++){
+    console.log("c", c);
+}
+console.log("c", c);
 
     </script>
 </body>

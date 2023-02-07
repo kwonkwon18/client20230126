@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,26 +9,49 @@
     <style>
     </style>
 </head>
+
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //boolean
-    
-    let a = 3;
-    a = 4;
-    a = 5;
-
-    let b = "hello";
-    b = "hi";
 
 
-    // 2개의 값만 있음 (true, false) 중요
-    let c = true;
-    let d = false;
+        for (let i = 2; i <= 9; i++) {
+            console.log(i + "단");
+            for (let j = 1; j <= 9; j++) {
+                console.log(j + "x" + i + "=" + (j * i));
+                
+            }
+            console.log("---------------------");
+        }
 
-    
+        console.log("거꾸로 출력");
+
+        for (let i = 9; i >= 2; i--) {
+            console.log(i + "단");
+            for (let j = 9; j >= 1; j--) {
+                console.log(j + "x" + i + "=" + (j * i));
+                
+            }
+            console.log("---------------------");
+        }
+
+        //중괄호 생각하기
+        // 조건 생각하기
+        // 초기값 생각하기
+        // 증감값 확인하기
+
+
+
+
+
+
+
+
+
+
 
     </script>
 </body>
+
 </html>

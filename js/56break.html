@@ -12,22 +12,25 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //boolean
-    
-    let a = 3;
-    a = 4;
-    a = 5;
+    //두개의 주사위를 던지고
+    // 나온 값을 출력
+    //두 주사위의 값이 같을 때 까지 반복
 
-    let b = "hello";
-    b = "hi";
+    let dice1;
+    let dice2;
 
+    while (true){
+        dice1 = parseInt(Math.random() * 6) + 1
+        dice2 = parseInt(Math.random() * 6) + 1
 
-    // 2개의 값만 있음 (true, false) 중요
-    let c = true;
-    let d = false;
+        console.log(dice1);
+        console.log(dice2);
 
-    
-
+        if(dice1 === dice2){
+            console.log("같은 눈이 나왔습니다.");
+            break;
+        }
+    }
     </script>
 </body>
 </html>

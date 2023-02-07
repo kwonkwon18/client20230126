@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,26 +9,28 @@
     <style>
     </style>
 </head>
+
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //boolean
-    
-    let a = 3;
-    a = 4;
-    a = 5;
 
-    let b = "hello";
-    b = "hi";
+        console.log("이전 코드들...");
+        outerLoop: for (let j = 0; j < 5; j++) {
+            console.log("j", j);
+            for (let i = 0; i < 5; i++) {
+                console.log("i", i);
 
-
-    // 2개의 값만 있음 (true, false) 중요
-    let c = true;
-    let d = false;
-
-    
+                if (i === 2) { // 이렇게 하면 3, 4는 볼 수 없된다. break 를 만나면 내부 for 에서 빠져서 외부로 감
+                    // 출력하고 브레이크문을 만났으니까, 2까지는 출력이됨
+                    break outerLoop; // 라벨에 해당하는 loop 종료
+                    // i 가 2가 되는 순간에 전체 반복문을 빠져나가게 됨(아에 종료)
+                }
+            }
+        }
+        console.log("다음 코드들...");
 
     </script>
 </body>
+
 </html>

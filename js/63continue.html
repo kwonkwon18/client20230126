@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,26 +9,31 @@
     <style>
     </style>
 </head>
+
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //boolean
-    
-    let a = 3;
-    a = 4;
-    a = 5;
+        let num = +prompt("1~100 중 제외할 배수를 입력하세요", 2);
 
-    let b = "hello";
-    b = "hi";
+        // for (let i = 1; i <= 100; i++) {
+
+        //     if ((i % num) === 0) {
+        //         continue
+        //     }
+
+        //     console.log(i)
+        // }
 
 
-    // 2개의 값만 있음 (true, false) 중요
-    let c = true;
-    let d = false;
+        for (let j = 1; j <= 100; j++) {
+            if(j%num != 0){
+                console.log(j);
+            }
+        }
 
-    
 
     </script>
 </body>
+
 </html>

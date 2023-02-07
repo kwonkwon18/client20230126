@@ -12,22 +12,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //boolean
-    
-    let a = 3;
-    a = 4;
-    a = 5;
+    let message = prompt("출력할 내용을 작성하세요","hello");
 
-    let b = "hello";
-    b = "hi";
+    let num = +prompt("몇번 출력할까요?");
 
-
-    // 2개의 값만 있음 (true, false) 중요
-    let c = true;
-    let d = false;
-
-    
-
+    for (let i = 0; i < num; i++){
+        console.log(message);
+    }
     </script>
 </body>
 </html>
