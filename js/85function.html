@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // 값으로 반환 가능
+        function a() {
+            function b() {
+                console.log("비 함수 실행.....");
+            }
+
+            return b;
+        }
+
+        let c = a();
+        // c();
+        
+        console.log(c());
+        // console.log(c);
+
+        console.log("======================================");
+        //자바스크립트에서 `Value`로 다루어지기때문에 함수를 반환 할 수 있습니다. 
+        const sayHello = function () {
+            return function() {
+                console.log("Hello!");
+            }
+        }
+        //사용법1
+        const myFunc = sayHello();
+        myFunc(); //반환된 함수를 실행
+
+        //사용법2
+        sayHello()(); //반환된함수를 바로 실행
+
+        sayHello();
+
+    </script>
+</body>
+
+</html>

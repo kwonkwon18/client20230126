@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <div><span id="result"></span></div>
+    <input type="text">
+
+    <button id="check" onclick="guess()">확인</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // 컴퓨터 랜덤 값 1~100 까지 설정
+        let com = parseInt(Math.random() * 100) + 1
+        console.log(com);
+
+        function guess() {
+            let user = document.querySelector("input").value; // 여기 몰랐음, 도큐먼트 접근, input 생성자 지정, 그 곳의 밸류 호출    
+            user = +user;
+            let message = "";
+            if (com < user) {
+                message = "작은값 입력"
+            } else if (com > user) {
+                message = "큰값을 입력"
+            } else {
+                message = "정답입니다"
+            } document.querySelector("#result").textContent = message;
+
+        }
+    </script>
+</body>
+
+</html>
