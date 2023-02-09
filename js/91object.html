@@ -14,14 +14,24 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = [9, 8, 7, 6];
-        let b = [11, 22, 33, 44];
-
-        //첫 인덱스를 더한것 끼리 첫번째 줄에 쭉쭉쭉 출력이 되도록
-
-        for (let i = 0; i < a.length; i++) {
-            console.log(a[i] + b[i]);
+        let person = {
+            name: "son",
+            age: 33,
+            describe: function () {
+                console.log(" 이름은 " + this.name + "이고 나이는 " + this.age + "살 입니다");
+            }
         }
+
+        person.describe();
+        person.age = 29;
+        person.name = "권"
+        person.describe();
+
+        
+
+
+
+
     </script>
 </body>
 

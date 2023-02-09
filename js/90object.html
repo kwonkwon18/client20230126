@@ -14,14 +14,26 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = [9, 8, 7, 6];
-        let b = [11, 22, 33, 44];
+        //object :여러 값(property)과 기능(method)을 갖는 데이터 구조
 
-        //첫 인덱스를 더한것 끼리 첫번째 줄에 쭉쭉쭉 출력이 되도록
+        let car = {
+            name: "kia", // 프로퍼티
+            price: 5000, // 프로퍼티
+            drive: function () {
+                console.log("운전기능 실행 중...");
+            }
 
-        for (let i = 0; i < a.length; i++) {
-            console.log(a[i] + b[i]);
         }
+        
+
+        console.log(car.drive());
+        console.log(car.name);
+        car.name = "테슬라"
+        console.log(car.name);
+        console.log(car.price);
+
+        car.drive();
+
     </script>
 </body>
 
