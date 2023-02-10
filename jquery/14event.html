@@ -11,35 +11,21 @@
 </head>
 
 <body>
-
+    <button id="button1">숨기기 </button>
+    <button id="button2">보이기 </button>
+    <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam qui reiciendis molestiae saepe nulla architecto quia consequatur. Libero molestias magnam possimus harum doloribus at similique odit, neque veniam nobis labore.</h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
 
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
+        $("#button1").on("click", function () {
+            $("h1").slideUp(400);
 
+        })
 
-        a.address = "jeju" // a 라는 객체의 address 를 가르키고 있다.
-
-        console.log(a.address);
-
-        let b = a.age; // b 객체에 넣어준 것. 
-
-        a.age = 66;
-
-        console.log(b);
-        console.log(a.age);
-
-        a.job = "teacher" //새로운 값 할당
-        console.log(a.job);
-
+        $("#button2").on("click", function () {
+            $("h1").slideDown(400);
+        })
     </script>
 </body>
 

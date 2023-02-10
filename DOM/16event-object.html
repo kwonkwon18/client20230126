@@ -11,35 +11,30 @@
 </head>
 
 <body>
-
+    <!-- // button[onclick]{클릭} -->
+    <div onmousedown="whichButton(event);">클릭</div>
+    <div id="res"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
+        function whichButton(param) {
+            console.log(param);
+            let message = "";
+            switch (param.button) {
+                case 0:
+                    message = "왼쪽버튼 클릭"
 
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
+                    break;
+                case 2:
+                    message = "오른쪽 버튼 클릭"
 
+                    break;
+                default:
+                    message = " 다른 버튼 클릭됨"
+                    break;
+            }
+            document.querySelector("#res").textContent = message;
 
-        a.address = "jeju" // a 라는 객체의 address 를 가르키고 있다.
-
-        console.log(a.address);
-
-        let b = a.age; // b 객체에 넣어준 것. 
-
-        a.age = 66;
-
-        console.log(b);
-        console.log(a.age);
-
-        a.job = "teacher" //새로운 값 할당
-        console.log(a.job);
-
+        }
     </script>
 </body>
 

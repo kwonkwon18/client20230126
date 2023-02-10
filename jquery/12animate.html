@@ -7,39 +7,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        h1 {
+            background-color: aquamarine;
+            width: 200px;
+            height: 300px;
+            font-size: 30px;
+        }
     </style>
 </head>
 
 <body>
+    <button onclick="bigH1();">누르기</button>
+    <h1>lorem1</h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
-
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
-
-
-        a.address = "jeju" // a 라는 객체의 address 를 가르키고 있다.
-
-        console.log(a.address);
-
-        let b = a.age; // b 객체에 넣어준 것. 
-
-        a.age = 66;
-
-        console.log(b);
-        console.log(a.age);
-
-        a.job = "teacher" //새로운 값 할당
-        console.log(a.job);
-
+        function bigH1() {
+            $("h1").animate({
+                width: "400px",
+                height: "500px",
+                fontSize: "96px",
+            }, 
+            1000,
+            function() {
+                console.log("애니메이션 끝")
+            });
+        }
     </script>
 </body>
 

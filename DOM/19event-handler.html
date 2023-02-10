@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,38 +8,29 @@
     <style>
     </style>
 </head>
-
 <body>
-
+    <!-- button#button$*2{$버튼 클릭} -->
+    <button id="button1" onclick="btnClick1();">1버튼 클릭</button> <!-- 어트리뷰트에 넣는 것-->
+    <button id="button2">2버튼 클릭</button>
+    <button id="button3">3버튼 클릭</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
+        
+        function btnClick1() {
+            console.log("1번 버튼 클릭됨");
+        }
 
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
+        let btn2 = document.querySelector("#button2");
+        btn2.onclick = function(){ // onclick 프로퍼티(메서드)를 사용
+            console.log("2번 클릭됨"); // 프로퍼티를 쓰는 것이 추천됨
+        }
 
+        let btn3 = document.querySelector("#button3");
+        btn3.addEventListener("click", function(){
+            console.log("3번 클릭됨");
+        }); //addEventListener메서드 사용방법
 
-        a.address = "jeju" // a 라는 객체의 address 를 가르키고 있다.
-
-        console.log(a.address);
-
-        let b = a.age; // b 객체에 넣어준 것. 
-
-        a.age = 66;
-
-        console.log(b);
-        console.log(a.age);
-
-        a.job = "teacher" //새로운 값 할당
-        console.log(a.job);
 
     </script>
 </body>
-
 </html>

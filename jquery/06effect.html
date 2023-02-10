@@ -11,35 +11,29 @@
 </head>
 
 <body>
-
+    <!-- h1*3>lorem1 -->
+    <h1>
+        Lorem.
+    </h1>
+    <h1>
+        Obcaecati.
+    </h1>
+    <h1>
+        Incidunt?
+    </h1>
+    <button onclick="hideHead();">숨기기</button>
+    <button onclick="showHead();">보이기</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
-
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
+        function showHead(){
+            $("h1").show(2000);
+        }
 
 
-        a.address = "jeju" // a 라는 객체의 address 를 가르키고 있다.
-
-        console.log(a.address);
-
-        let b = a.age; // b 객체에 넣어준 것. 
-
-        a.age = 66;
-
-        console.log(b);
-        console.log(a.age);
-
-        a.job = "teacher" //새로운 값 할당
-        console.log(a.job);
-
+        function hideHead(){
+            $("h1").hide(3000);
+        }    
     </script>
 </body>
 

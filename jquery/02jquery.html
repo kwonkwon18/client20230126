@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,38 +8,33 @@
     <style>
     </style>
 </head>
-
-<body>
+<!-- <body>h1#head$*3>lorem1 -->
+    
+    <body><h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2">
+        Ipsa!
+    </h1>
+    <h1 id="head3">
+        Eveniet?
+    </h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
+    let a = $();
+    console.log(a);
 
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
+    let b = $("#head1") //제이쿼리 이렇게 써주면 됨 ==> 제이쿼리 객체를 리턴함 //메소드 덩어리인 제이쿼리 객체
 
+    b.remove(); //b에 들어있는 #head1 을 제이쿼리 객체의 메서드를 사용해서 삭제 해줌
 
-        a.address = "jeju" // a 라는 객체의 address 를 가르키고 있다.
+    //결론은 달러 함수와 달러 함수로 만들어진 제이쿼리 객체에 메서드가 뭐가 있고 그것을 어떻게 사용하는지
 
-        console.log(a.address);
+    console.log(b);
 
-        let b = a.age; // b 객체에 넣어준 것. 
-
-        a.age = 66;
-
-        console.log(b);
-        console.log(a.age);
-
-        a.job = "teacher" //새로운 값 할당
-        console.log(a.job);
 
     </script>
 </body>
-
 </html>

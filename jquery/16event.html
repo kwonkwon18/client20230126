@@ -11,35 +11,25 @@
 </head>
 
 <body>
-
+    <!-- input#input1+ul#list1 -->
+    <input type="text" id="input1">
+    <ul id="list1"></ul>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
-
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
-
-
-        a.address = "jeju" // a 라는 객체의 address 를 가르키고 있다.
-
-        console.log(a.address);
-
-        let b = a.age; // b 객체에 넣어준 것. 
-
-        a.age = 66;
-
-        console.log(b);
-        console.log(a.age);
-
-        a.job = "teacher" //새로운 값 할당
-        console.log(a.job);
-
+        //input 에서 값을 받을 것
+        //ul 안에 li를 추가해줄 것
+        $("#input1").on("keyup", function (event) {
+            if (event.key === "Enter") {
+                // 새 li 요소 만들고
+                let li = document.createElement("li");
+                // 새 li 요소에 input의 value 를 textContent 로 추가
+                li.textContent = this.value;
+                // ul에 li요소 append
+                document.querySelector("#list1").append(li);
+                this.value = "";
+            }
+        }) // 여기서는 input 로 향하게 된다. 
     </script>
 </body>
 

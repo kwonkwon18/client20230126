@@ -1,4 +1,4 @@
-package asdf;
+package algorithm;
 
 import java.util.Scanner;
 

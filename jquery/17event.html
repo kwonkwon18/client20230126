@@ -11,35 +11,42 @@
 </head>
 
 <body>
-
+    <h1>
+        Lorem.
+    </h1>
+    <h1>
+        Nisi?
+    </h1>
+    <h1>
+        Qui?
+    </h1>
+    <h1>
+        Dolorem.
+    </h1>
+    <h1>
+        Fugiat.
+    </h1>
+    <h1>
+        Quidem.
+    </h1>
+    <h1>
+        Dolores?
+    </h1>
+    <h1>
+        Praesentium?
+    </h1>
+    <h1>
+        Et?
+    </h1>
+    <h1>
+        Illo!
+    </h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
-
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
-
-
-        a.address = "jeju" // a 라는 객체의 address 를 가르키고 있다.
-
-        console.log(a.address);
-
-        let b = a.age; // b 객체에 넣어준 것. 
-
-        a.age = 66;
-
-        console.log(b);
-        console.log(a.age);
-
-        a.job = "teacher" //새로운 값 할당
-        console.log(a.job);
-
+        $("h1").on("click", function () {
+         $(this).hide(3000); //this 를 해주면 해당 클릭된, 해당 메소드가 실현되는 부분만 반응해줌
+        })
     </script>
 </body>
 

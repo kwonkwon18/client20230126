@@ -11,35 +11,35 @@
 </head>
 
 <body>
-
+    <!-- h1*4#head$>lorem1 -->
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2" class="note">
+        Odio.
+    </h1>
+    <h1 id="head3" class="note">
+        Aut!
+    </h1>
+    <h1 id="head4">
+        Laboriosam.
+    </h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
+        let heads = document.querySelectorAll("h1"); // 배열로 받음
+        for (i = 0; i < heads.length; i++) {
+            console.log(heads[i].textContent);
+        }
 
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
+        // note 클래스인 요소의 객체를 dom 에서 가져와서 
+        // 요소들의 textContent 를 출력하기
 
+        let note = document.querySelectorAll(".note");
+        for (i = 0; i < note.length; i++) {
+            console.log(note[i].textContent);
+        }
 
-        a.address = "jeju" // a 라는 객체의 address 를 가르키고 있다.
-
-        console.log(a.address);
-
-        let b = a.age; // b 객체에 넣어준 것. 
-
-        a.age = 66;
-
-        console.log(b);
-        console.log(a.age);
-
-        a.job = "teacher" //새로운 값 할당
-        console.log(a.job);
-
+        // dom 에서 불러오는 것 중, 여러개 불러오는 것들은 배열 타입으로 저장된다. 
     </script>
 </body>
 

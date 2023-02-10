@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        
+        #head2,
+        #head3{
+            display: inline;
+            color: aquamarine;
+            background-color: blanchedalmond;
+        }
     </style>
 </head>
-
 <body>
+    <!-- h1#head$*3>lorem2 -->
+    <h1 id="head1">
+        Lorem, ipsum.
+    </h1>
+    <h1 id="head2">
+        Reiciendis, harum?
+    </h1>
+    <h1 id="head3">
+        Reiciendis, nesciunt.
+    </h1>
 
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
+        // html 문법을 사용함 
+    let o1 = document.getElementById("head1"); // 엘레멘트를 객체로 만들어준 것 !! 
+    console.log(o1.textContent);
 
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
+    let o2 = document.getElementById("head2");
 
+    o1.textContent = "hello DOM" ; // 페이지 내용이 바뀜 but 페이지 소스가 바뀐건 아님
+    console.log(o1.textContent);
 
-        a.address = "jeju" // a 라는 객체의 address 를 가르키고 있다.
+    o1.remove(); //h1#head1(요소)이 사라짐
 
-        console.log(a.address);
+    o2.textContent = "자바스크립트"
 
-        let b = a.age; // b 객체에 넣어준 것. 
+    // 아이디가 head3 인 요소의 텍스트 컨텐츠를 바꾸기
 
-        a.age = 66;
+    let o3 = document.getElementById("head3");
 
-        console.log(b);
-        console.log(a.age);
-
-        a.job = "teacher" //새로운 값 할당
-        console.log(a.job);
+    o3.textContent = "안녕안녕";
+    
 
     </script>
 </body>
-
 </html>

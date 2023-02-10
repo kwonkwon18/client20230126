@@ -6,21 +6,59 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        p:nth-child(odd){
+            background-color: aquamarine;
+        }
     </style>
 </head>
 <body>
-
+    <button >원래대로</button>
+<p>
+    Lorem, ipsum dolor.
+</p>
+<p>
+    Et, modi assumenda.
+</p>
+<p>
+    Porro, deleniti voluptate.
+</p>
+<p>
+    Placeat, mollitia quos!
+</p>
+<p>
+    Possimus, molestias eligendi?
+</p>
+<p>
+    Earum, ipsum itaque.
+</p>
+<p>
+    Quibusdam, quae repellat.
+</p>
+<p>
+    Quae, voluptatibus eius.
+</p>
+<p>
+    Quisquam, omnis cum.
+</p>
+<p>
+    Nihil, eveniet temporibus.
+</p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        //함수 실행, 함수 호출한다. 라고  한다.
-        function printHello() {
-            console.log("HELLO");
-        }
+    //p 요소가 클릭되면
+    //누른 요소가 fadeout 되도록
 
+    $("p").on("click", function(){
+        $(this).fadeOut(300);
+    })
 
+    //button 이 눌리면
+    // 모든 p 요소가 fadein 되도록
 
-
-    printHello(); //콘솔에 "HELLO"
+    $("button").on("click", function(){
+        $("p").fadeIn(300);
+    })
     </script>
 </body>
 </html>

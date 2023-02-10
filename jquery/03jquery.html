@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,38 +8,39 @@
     <style>
     </style>
 </head>
-
 <body>
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2">
+        Molestiae.
+    </h1>
+    <h1 id="head3">
+        Illum.
+    </h1>
+    <h1 id="head4">
+        Dolores.
+    </h1>
+    <h1 id="head5">
+        Voluptates.
+    </h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        // 객체의 property 이름은 lowerCamelCase
-        let a = {
-            address: "seoul",
-            age: 55,
-            bookTitle: "spring"
-        };
 
-        console.log(a.address);
-        console.log(a.age);
-        console.log(a.bookTitle);
+    // 중요한건 엘레멘트를 선택해서 쓸 수 있는 것. 제이쿼리는 라이브러리.
+    let a = $("#head1")
+    a.hide();
 
+    let b = $("#head2")
+    b.hide(3000);
 
-        a.address = "jeju" // a 라는 객체의 address 를 가르키고 있다.
+    $("#head3").hide(2000);
 
-        console.log(a.address);
-
-        let b = a.age; // b 객체에 넣어준 것. 
-
-        a.age = 66;
-
-        console.log(b);
-        console.log(a.age);
-
-        a.job = "teacher" //새로운 값 할당
-        console.log(a.job);
+    $("#head4").hide("slow");
+    $("#head5").hide("fast");
 
     </script>
 </body>
-
 </html>
